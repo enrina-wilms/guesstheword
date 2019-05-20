@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Guess the Word</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Ruda:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+</head>
+    
+<body>
+    <div class="page-wrapper980"> <!--START OF 980 PAGE WRAPPER-->
+    <div id="skip-link-container">
+    <p id="skip-link">
+      <a href="#welcome-play-button" class="skip-to-main">Start Game</a>
+    </p>
+    </div>
+        <!-- WELCOME TEXT OVERLAY-->
+        <div id="welcome-overlay-container" class="flex-container">
+            <div id="welcome-overlay-elements">
+                <h2 id="welcome-text">Guess The Word?!!</h2>
+                
+                <button id="welcome-play-button" type="submit" name="submit">Let's Play</button>
+            </div>
+        </div>
+        
+        <main id="main" class="flex-container hidden" > <!-- START OF MAIN -->
+
+        <header class="heading">
+            <h1>Guess the Word</h1>
+        </header>
+        
+        <!--GUESSES LEFT CONTAINER-->  
+        <div class="container">
+            <h2>GUESSES LEFT :
+            <span id="guessesremaining"></span>
+            </h2>
+        </div>
+        
+        <!--WRONG GUESS INDICATOR CONTAINER EACH DIV WILL APPEAR EVERYTIME GUESSREMAINING DECREASE-->  
+        <div  class="container">   
+        <div id="wrong-moves-container">
+            <div id="wm1" class="wrong-moves">X</div>
+            <div id="wm2" class="wrong-moves">X</div>
+            <div id="wm3" class="wrong-moves">X</div>
+            <div id="wm4" class="wrong-moves">X</div>
+        </div>    
+        </div>    
+        
+        <!--HINT CONTAINER-->  
+        <div class="container">
+            <p id="hint">Hint: Popular Color Names</p>
+            <p>Press any key to guess the letter!</p>
+        </div>      
+         
+        <!--RIGHT GUESS CONTAINER-->  
+        <div class="container">
+        <div id="guess-container">
+            <div>LETTERS YOU GUESSED RIGHT:
+            </div>
+            <div>
+            <span id="currentword"></span> 
+            </div>
+        </div>
+        </div>
+            
+        <!--WRONG GUESS CONTAINER-->        
+        <div class="container">
+        <div id="wrong-guess-container">
+            <div>LETTERS YOU GUESSED WRONG:
+            </div>
+            <div id="wrong">
+                <span id="wrongLetter"></span>
+            </div>
+        </div>
+        </div>
+        </main> <!-- END OF MAIN-->
+        
+        <!--EXIT TEXT WHEN THE PLAYER WIN OR LOST-->
+        <div id="exit-text" class="flex-container">
+            <div id="exit-text-flex">
+            <h2 id="intro-message">Intro Message</h2>
+            <h3 id="h3-bg"><span id="answer">Correct Word</span><span id="answer-highlight"></span></h3>
+            <div id="button">
+            <button id="exit-play-button" type="submit" name="submit">Play Again?</button>
+            </div>
+            </div>
+        </div>
+        
+        <footer id="footer"> <!-- START OF FOOTER SECTION -->
+            <div>&copy; 2018 Enrina Wilms | Web Development and Design | All Rights Reserved.</div>
+        </footer> <!-- END OF FOOTER SECTION -->
+       
+    </div> <!--END OF 980PX WRAPPER-->
+     <script src="javascript/script.js"></script>
+<!--     <script src="javascript/script-otherversion.js"></script>-->
+</body>
+</html>
